@@ -111,3 +111,25 @@
     background: linear-gradient(0deg, rgba(1, 1, 52, 0.8) 8%, rgba(1, 1, 52, 0)50%);
 }
 
+<!-- about html -->
+<section class="about" id="about">
+      <div class="container">
+        <div class="content">
+          <h2>What it's <span>RetroGames?</span></h2>
+          <div class="row">
+            <div class="about-img">
+              <img src="assets/sesi-about.jpg" alt="RetroGames" />
+            </div>
+            <div class="definition">
+              <h3>RetroGames</h3>
+              <p>
+                Retrogames are old-school video games that evoke nostalgia and
+                provide classic entertainment. They often feature pixelated
+                graphics, iconic characters, and challenging gameplay that
+                defined the gaming experience of past decades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
