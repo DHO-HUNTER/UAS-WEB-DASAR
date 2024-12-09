@@ -1,6 +1,12 @@
 <!-- hal yang diperlukan saat penting di html -->
 
-
+        <div class="bb-content">
+          <h3>-WHAT IS BALL BREAKER?-</h3>
+          <p >
+            "Ball Breaker Is a Classic Arcade Game Was Released In 1984, Where
+            Players Can Control a Paddle To Bounce a Ball And Destroy Bricks."
+          </p>
+        </div>
 <!-- hal yang diperlukan saat penting di css -->
 
 <!-- hal yang saya ingin html -->
@@ -133,3 +139,35 @@
         </div>
       </div>
     </section>
+
+<!-- list -->
+<div class="bb-content">
+  
+  
+  </div>
+
+
+
+
+
+  <!--  -->
+  <div class="bb-img">
+       <a href="">
+        <img src="assets/bb.png" alt="ball-breaker">
+       </a>
+      </div>
+      <div class="Snake">
+        <img src="assets/ular.png" alt="Snake">
+       </div>
+        <div class="snake-content">
+        <h3>-DEFINITION OF SNAKE GAME-</h3>
+        <p>Snake Is An Iconic Old-School Games Where You Navigate a Growing Snake
+          To Eat Food, Avoid Walls And Itself, With Increasingly Challenging Speed And Length.
+        </p>
+      </div>
+      <div class="space-invader">
+        <img src="" alt="space-invader">
+      </div>
+        <div class="invader-content">
+
+       </div>

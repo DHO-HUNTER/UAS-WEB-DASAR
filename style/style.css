@@ -5,10 +5,6 @@
     --hover: rgba(50, 16, 143);
 }
 
-html {
-    scroll-behavior: smooth;
-    min-height: 5000px;
-}
 
 * {
     padding: 0;
@@ -17,7 +13,11 @@ html {
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+    min-height: 5000px;
 }
 
 body {
@@ -59,14 +59,14 @@ header {
 .navbar .navbar-judul {
     font-family: "Tiny5";
     font-style: italic;
-    font-weight: 100;
+    font-weight: 600;
     background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
     background-clip: text;
     color: transparent;
     margin: 0 1rem;
     display: inline-block;
     font-size: 1.6rem;
-    
+
 }
 
 .navbar .navbar-nav a {
@@ -152,13 +152,14 @@ header {
     font-size: 1.6rem;
     margin: 1rem;
     line-height: 1.4;
-    font-weight: 100;
+    font-weight: 500;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     mix-blend-mode: differenc;
     font-style: italic;
     animation: pageIn 1s forwards;
     animation-delay: 4.5s;
     opacity: 0;
+    width: 30em;
 }
 
 .hero .container .content p span {
@@ -168,6 +169,7 @@ header {
     line-height: 1.4;
     font-weight: 100;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-weight: 700;
 }
 
 .hero .container .content .cta {
@@ -200,7 +202,7 @@ header {
 .hero .container .content svg text {
     text-transform: uppercase;
     font-family: "Shojumaru", system-ui;
-    font-size: 10rem;
+    font-size: 12em;
     animation: stroke 3.5s infinite alternate;
     stroke-width: 3;
     stroke: var(--bg);
@@ -209,56 +211,118 @@ header {
 /* about section */
 .about {
     padding: 8rem 7% 1.4rem;
-
-}
-
-.about h2 {
-    text-align: center;
-    font-size: 2.6rem;
-    margin-bottom: 3rem;
-}
-
-.about h2 span {
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    color: transparent;
-    font-family: 'Tiny5';
-    font-style: italic;
 }
 
 .about .row {
     display: flex;
 }
 
-.about .row .about-img {
-    flex: 1 1 45rem;
-}
-
-.about .row .about-img img {
-    width: 100%;
-
-}
-
-.about .row .content {
-    flex: 1 1 35rem;
-    padding: 0 1rem;
-}
-
-.about .row .content h3 {
-    font-size: 1.8rem;
+.about .row h3 {
+    display: flex;
+    font-weight: 200;
     margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.about .row h3 span {
+    color: transparent;
     background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
     background-clip: text;
-    color: transparent;
     font-family: 'Tiny5';
+    margin-left: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .about .row .content p {
+    display: flex;
     margin-bottom: 0.8rem;
-    font-size: 1.3rem;
-    font-weight: 100;
-    line-height: 1.6;
-    justify-content: left;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    text-align: left;
+    width: 750px;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.about .row .content p,
+li {
+    width: 750px;
+    font-size: 1.6rem;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+
+.about .row .about-img img {
+    width: 120%;
+}
+
+/* list section */
+.list {
+    padding: 8rem 7% 1.4rem;
+}
+
+.list h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+
+}
+
+.list h2 span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+}
+
+.list .guide {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: rem;
+    margin-bottom: 3rem;
+    color: grey;
+    mix-blend-mode: difference;
+}
+
+.list .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .snake-image .img {
+    width: 100%;
+}
+.list .snake-image h3{
+    color: transparent;
+    background: linear-gradient(to right,rgba(0,0,135,1),rgba(90,0,207,1));
+    background-clip: text;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Tiny5';
+    margin-top: 4rem;
+}
+
+
+.list .row .bb-image img {
+    width: 100%;
+}
+
+.list .row .invader img {
+    width: 100%;
+}
+.list .row .invader,.bb-image h3{
+    color: transparent;
+    background: linear-gradient(to right,rgba(0,0,135,1),rgba(90,0,207,1));
+    background-clip: text;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Tiny5';
 }
 
 
@@ -277,7 +341,7 @@ header {
     }
 
     80% {
-        stroke: rgba(92, 0, 207, 1);
+        stroke: var(--hover);
         stroke-width: 3;
     }
 
@@ -301,12 +365,15 @@ header {
 
 
 @keyframes glow {
-    0%, 100% {
+
+    0%,
+    100% {
         color: #fff;
-        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+        text-shadow: 0 0 20px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
     }
 
-    10%, 90% {
+    10%,
+    90% {
         color: #111;
         text-shadow: none;
     }
