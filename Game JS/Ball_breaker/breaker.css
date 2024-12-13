@@ -1,11 +1,26 @@
 body {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+  background-color: #00021f;
+}
+
+h1 {
+  color: transparent;
+  background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+  background-clip: text;
+  font-family: 'Tiny5';
+  font-style: italic;
+  
+}
+
+button {
+  background-color: #00021f;
 }
 
 #board {
-  background-color: black;
+  background-color: #000000;
   border-top: 5px solid lime;
   border-left: 5px solid lime;
   border-right: 5px solid lime;
+  border-bottom: 5px solid lime;
 }

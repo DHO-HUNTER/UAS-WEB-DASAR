@@ -77,7 +77,7 @@ function update() {
   context.clearRect(0, 0, board.width, board.height);
 
   //player update
-  context.fillStyle = "lime";
+  context.fillStyle = "red";
   context.fillRect(player.x, player.y, player.width, player.height);
 
   //ball update

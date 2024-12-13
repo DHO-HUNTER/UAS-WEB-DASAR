@@ -213,6 +213,7 @@ header {
     padding: 8rem 7% 1.4rem;
 }
 
+
 .about .row {
     display: flex;
 }
@@ -259,11 +260,14 @@ li {
 
 .about .row .about-img img {
     width: 120%;
+    justify-items: flex-end;
 }
 
 /* list section */
+/* bb game */
 .list {
     padding: 8rem 7% 1.4rem;
+    background-color: rgb(1, 1, 37);
 }
 
 .list h2 {
@@ -284,50 +288,253 @@ li {
 .list .guide {
     text-align: center;
     font-size: 1.2rem;
-    margin-top: rem;
-    margin-bottom: 3rem;
+    margin-top: r;
+    margin-bottom: 5rem;
     color: grey;
     mix-blend-mode: difference;
 }
 
-.list .row {
-    display: ;
+.list .row .bb-row {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.list .row .bb-row .bb-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.list .row .bb-row .bb-content h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.list .row .bb-row .bb-content h3 span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.list .row .bb-row .bb-content p {
+    margin-bottom: 2.5rem;
+    width: 25em;
+    font-size: 1.6rem;
+}
+
+.list .row .bb-row .bb-content p span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.list .row .bb-row .bb-content .cta-bb {
+    display: flex;
     justify-content: space-between;
+    border: 2rem rgba(0, 0, 52) solid;
+    border-radius: 1.5rem;
+    background: rgba(0, 0, 52);
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    animation: glow 2s infinite ease-in-out;
 }
 
-.list .snake-image .img {
-    width: 100%;
+.list .row .bb-row .bb-image {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-items: flex-end;
+
 }
-.list .snake-image h3{
-    color: transparent;
-    background: linear-gradient(to right,rgba(0,0,135,1),rgba(90,0,207,1));
-    background-clip: text;
-    text-align: center;
+
+.list .row .bb-row .bb-image img {
+    width: 90%;
+}
+
+/* bb-game end */
+
+/* snake game */
+.list .row .snake-row {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.list .row .snake-row .snake-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.list .row .snake-row .snake-content h3 {
+    margin-bottom: 2rem;
     font-size: 2rem;
-    font-family: 'Tiny5';
-    margin-top: 4rem;
 }
 
-
-.list .row .bb-image img {
-    width: 100%;
-}
-
-.list .row .invader img {
-    width: 100%;
-}
-.list .row .invader,.bb-image h3{
+.list .row .snake-row .snake-content h3 span {
     color: transparent;
-    background: linear-gradient(to right,rgba(0,0,135,1),rgba(90,0,207,1));
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
     background-clip: text;
-    text-align: center;
-    font-size: 2rem;
     font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.5rem;
 }
 
+.list .row .snake-row .snake-content p {
+    margin-bottom: 2.5rem;
+    width: 30em;
+    font-size: 1.6rem;
+}
 
+.list .row .snake-row .snake-content p span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.list .row .snake-row .snake-content .cta-snake {
+    display: flex;
+    justify-content: right;
+    border: 2rem rgba(0, 0, 52) solid;
+    border-radius: 1.5rem;
+    background: rgba(0, 0, 52);
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    animation: glow 2s infinite ease-in-out;
+    justify-items: center;
+}
+
+.list .row .snake-row .snake-image {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-items: flex-end;
+}
+
+.list .row .snake-row .snake-image img {
+    width: 100%;
+}
+
+/* snake game end */
+
+/* invader game */
+.list .row .invader-row {
+    display: flex;
+}
+
+.list .row .invader-row .invader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.list .row .invader-row .invader-content h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.list .row .invader-row .invader-content h3 span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.list .row .invader-row .invader-content p {
+    margin-bottom: 2.5rem;
+    width: 28em;
+    font-size: 1.6rem;
+}
+
+.list .row .invader-row .invader-content p span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.list .row .invader-row .invader-content .cta-invader {
+    display: flex;
+    justify-content: space-between;
+    border: 2rem rgba(0, 0, 52) solid;
+    border-radius: 1.5rem;
+    background: rgba(0, 0, 52);
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    animation: glow 2s infinite ease-in-out;
+}
+
+.list .row .invader-row .invader-image {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-items: flex-end;
+}
+
+.list .row .invader-row .invader-image img {
+    width: 85%;
+}
+
+/* invader game end*/
+
+/* section FAQ start*/
+
+.faq-section {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    cursor: pointer;
+    background: #007BFF;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #007BFF;
+    margin-top: 5px;
+}
+
+/* FAQ end */
 
 /* keyframe web */
+
+
+
 @keyframes stroke {
     0% {
         stroke: rgba(0, 0, 135, 1);
@@ -374,7 +581,7 @@ li {
 
     10%,
     90% {
-        color: #111;
+        color: #00021f;
         text-shadow: none;
     }
 }
