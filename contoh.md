@@ -171,3 +171,45 @@
         <div class="invader-content">
 
        </div>
+
+
+       padding: 8rem 7% 1.4rem;
+
+
+
+
+
+
+
+       <!DOCTYPE html <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section with Toggle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">What is your return policy? <span class="toggle">+</span></h3>
+            <p class="faq-answer">Our return policy allows you to return items within 30 days of purchase for a full refund.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">How do I track my order? <span class="toggle">+</span></h3>
+            <p class="faq-answer">You can track your order using the tracking link sent to your email after shipment.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Do you ship internationally? <span class="toggle">+</span></h3>
+            <p class="faq-answer">Yes, we offer international shipping to select countries.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What payment methods do you accept? <span class="toggle">+</span></h3>
+            <p class="faq-answer">We accept all major credit cards, PayPal, and bank transfers.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

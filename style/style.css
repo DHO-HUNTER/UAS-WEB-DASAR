@@ -17,7 +17,6 @@
 
 html {
     scroll-behavior: smooth;
-    min-height: 5000px;
 }
 
 body {
@@ -498,11 +497,32 @@ li {
 /* section FAQ start*/
 
 .faq-section {
-    max-width: 600px;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    height: 35rem;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+h2 span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    margin: 0 0.5rem;
+    font-family: "Tiny5";
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.faq-container {
+    padding: 4rem;
+    margin-top: 1rem;
+    padding: 8rem 7% ;
 }
 
 .faq-item {
@@ -510,26 +530,142 @@ li {
 }
 
 .faq-question {
-    cursor: pointer;
-    background: #007BFF;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    border-bottom: #00021f 2px solid;
+    border-left: #00021f 2px solid;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .faq-question:hover {
-    background: #0056b3;
+    background: #00021f;
+    transform: scale(1.02);
 }
 
 .faq-answer {
     display: none;
-    padding: 10px;
-    border-left: 3px solid #007BFF;
-    margin-top: 5px;
+    padding: 1rem;
+    border-left: 0.2em solid #007BFF;
+    margin-top: 1em;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: max-height 1s ease-out, transform 1s ease-out;
+}
+
+.faq-answer.show {
+    max-height: 20rem;
+    /* Adjust based on content */
+    transform: translateY(0);
+    /* Reset transform when shown */
+}
+
+.faq-answer.hide {
+    transform: translateY(-1rem);
+    /* Move up slightly when hiding */
+}
+
+.faq-answer p {
+    margin: 1rem 0;
+}
+
+.toggle {
+    margin-left: 1rem;
 }
 
 /* FAQ end */
+
+/* contact section*/
+.contact {
+    background-color: #00021f;
+    padding: 8rem 7% ;
+}
+
+.row {
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.contact h2 span {
+    color: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
+    background-clip: text;
+    font-family: 'Tiny5';
+    font-style: italic;
+    font-size: 2.6rem;
+}
+
+.contact .guide {
+    text-align: center;
+    font-size: 1.2rem;
+
+    color: grey;
+    mix-blend-mode: difference;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-grup {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-grup input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color:var(--bg);
+    cursor: pointer;
+}
+.send{
+    text-decoration: none;
+    color: white;
+}
+
+/* contact section end*/
+
+/* footer */
+footer {
+     /* Warna latar belakang footer */
+    color: white; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+    padding: 10px 0; /* Padding atas dan bawah */
+    position: relative; /* Posisi relatif untuk footer */
+    bottom: 0; /* Menempatkan footer di bagian bawah */
+    width: 100%; /* Lebar penuh */
+}
+
+footer p {
+    margin: 0; /* Menghapus margin default */
+}
+/* footer end */
 
 /* keyframe web */
 
@@ -608,14 +744,14 @@ li {
 
 /* media kueris */
 /* laptop */
-@media (max-width:1366px) {
+@media (min-width:992px) and (max-width:1199px) {
     html {
         font-size: 100%;
     }
 }
 
 /* tablet */
-@media (max-width:758px) {
+@media (min-width:768px) and (max-width:991px) {
     html {
         font-size: 75%;
     }
@@ -657,21 +793,130 @@ li {
 
 }
 
-/* width custom */
+/* width custom
 @media(max-width:853px) {
     html {
         font-size: 70%;
     }
-}
+} */
 
 /* mobile phone */
-@media (max-width:450px) {
+@media (max-width:767px) {
     html {
         font-size: 65%;
     }
 
+    /* Responsive styles for max-width: 767px */
     #hamburger-menu {
         display: inline-block;
     }
 
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        bottom: 40%;
+        background-color: rgba(0, 0, 52, 0.9);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: white;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.2rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+   .hero {
+        min-height: 60vh; /* Adjust hero section height */
+        padding: 1em; /* Add padding */
+        background-size: cover; /* Ensure background covers the area */
+    }
+
+    .hero .container .content p {
+        font-size: 1.4rem; /* Adjust font size */
+        width: 100%; /* Full width */
+    }
+
+    .about .row {
+        flex-direction: column; /* Stack about section items */
+        align-items: center; /* Center items */
+    }
+
+    .about .row .content p {
+        width: 90%; /* Adjust width */
+    }
+
+    .about .row .about-img img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .list .row .bb-row,
+    .list .row .snake-row,
+    .list .row .invader-row {
+        flex-direction: column; /* Stack game sections */
+        align-items: center; /* Center items */
+    }
+
+    .list .row .bb-row .bb-content,
+    .list .row .snake-row .snake-content,
+    .list .row .invader-row .invader-content {
+        width: 100%; /* Full width */
+    }
+
+    .list .row .bb-image img,
+    .list .row .snake-image img,
+    .list .row .invader-image img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .contact .row {
+        flex-direction: column; /* Stack contact form */
+        align-items: center; /* Center items */
+    }
+
+    .contact .row form {
+        width: 90%; /* Adjust form width */
+        padding: 2rem; /* Adjust padding */
+    }
+
+    .contact .row form .input-grup {
+        width: 100%; /* Full width for input group */
+    }
+
+    .contact .row form .input-grup input {
+        width: 100%; /* Full width for input */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .contact .row form .btn {
+        width: 100%; /* Full width for button */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    footer {
+        padding: 1rem; /* Adjust footer padding */
+    }
+
+    footer p {
+        font-size: 1rem; /* Adjust footer font size */
+    }
 }
+

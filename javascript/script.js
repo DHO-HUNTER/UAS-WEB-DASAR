@@ -15,19 +15,35 @@ document.addEventListener("click", function (e) {
 });
 
 //FAQ section
-document.addEventListener("DOMContentLoaded", function() {
-  const questions = document.querySelectorAll('.faq-question');
+document.addEventListener("DOMContentLoaded", function () {
+  const questions = document.querySelectorAll(".faq-question");
 
-  questions.forEach(question => {
-      question.addEventListener('click', function() {
-          const answer = this.nextElementSibling;
+  questions.forEach((question) => {
+    question.addEventListener("click", function () {
+      const answer = this.nextElementSibling;
+      const toggle = this.querySelector(".toggle");
 
-          // Toggle the display of the answer
-          if (answer.style.display === "block") {
-              answer.style.display = "none";
-          } else {
-              answer.style.display = "block";
-          }
-      });
+      // Toggle the display of the answer
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        toggle.textContent = "+";
+      } else {
+        answer.style.display = "block";
+        toggle.textContent = "-";
+      }
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        answer.classList.remove("show");
+        answer.classList.add("hide"); // Add hide class for transform
+        toggle.textContent = "+";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "rem";
+        answer.classList.remove("hide"); // Remove hide class
+        answer.classList.add("show"); // Add show class for transform
+        toggle.textContent = "-";
+      }
+    });
   });
 });
+
+
