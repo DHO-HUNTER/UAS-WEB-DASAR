@@ -162,13 +162,9 @@ header {
 }
 
 .hero .container .content p span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
     line-height: 1.4;
-    font-weight: 100;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .hero .container .content .cta {
@@ -500,13 +496,14 @@ li {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    height: 35rem;
+    height: 40rem;
 }
 
 .faq-section h2 {
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
+    
 }
 
 h2 span {
@@ -522,7 +519,7 @@ h2 span {
 .faq-container {
     padding: 4rem;
     margin-top: 1rem;
-    padding: 8rem 7% ;
+    padding: 9rem 7% ;
 }
 
 .faq-item {
@@ -614,7 +611,7 @@ h2 span {
 
 .contact .row form {
     flex: 1 1 45rem;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 
@@ -653,13 +650,13 @@ h2 span {
 
 /* footer */
 footer {
-     /* Warna latar belakang footer */
-    color: white; /* Warna teks */
-    text-align: center; /* Pusatkan teks */
-    padding: 10px 0; /* Padding atas dan bawah */
-    position: relative; /* Posisi relatif untuk footer */
-    bottom: 0; /* Menempatkan footer di bagian bawah */
-    width: 100%; /* Lebar penuh */
+    background-color:var(--bg) ;
+    color: white; 
+    text-align: center;
+    padding: 10px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
 }
 
 footer p {
@@ -843,80 +840,88 @@ footer p {
     }
 
    .hero {
-        min-height: 60vh; /* Adjust hero section height */
-        padding: 1em; /* Add padding */
-        background-size: cover; /* Ensure background covers the area */
+        min-height: 60vh; 
+        padding: 1em; 
+        background-size: cover; 
+    }
+    .hero svg{
+        font-size: 1.5rem;
     }
 
     .hero .container .content p {
-        font-size: 1.4rem; /* Adjust font size */
-        width: 100%; /* Full width */
+        font-size: 1.4rem; 
+        width: 69%; 
     }
 
     .about .row {
-        flex-direction: column; /* Stack about section items */
-        align-items: center; /* Center items */
+        display: flex;
+        flex-direction: column;
+    }
+    .about .row h3 span{
+        padding: 0.2rem;
+        font-size: 2.5rem;
     }
 
     .about .row .content p {
-        width: 90%; /* Adjust width */
+        width: 90%;
     }
 
     .about .row .about-img img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto;
     }
 
     .list .row .bb-row,
     .list .row .snake-row,
     .list .row .invader-row {
-        flex-direction: column; /* Stack game sections */
-        align-items: center; /* Center items */
+        display: flex;
+        flex-direction: column; 
     }
 
-    .list .row .bb-row .bb-content,
-    .list .row .snake-row .snake-content,
-    .list .row .invader-row .invader-content {
-        width: 100%; /* Full width */
+    .list .row .bb-row .bb-content p,
+    .list .row .snake-row .snake-content p,
+    .list .row .invader-row .invader-content p{
+        display:none ;
     }
 
     .list .row .bb-image img,
     .list .row .snake-image img,
     .list .row .invader-image img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 10%;
+        height: 10%; 
     }
 
     .contact .row {
-        flex-direction: column; /* Stack contact form */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .contact .row form {
-        width: 90%; /* Adjust form width */
-        padding: 2rem; /* Adjust padding */
+        width: 100%; 
+        padding: 2rem ;
     }
 
     .contact .row form .input-grup {
-        width: 100%; /* Full width for input group */
+        width: 100%; 
     }
 
     .contact .row form .input-grup input {
-        width: 100%; /* Full width for input */
-        padding: 1rem; /* Adjust padding */
+        width: 100%; 
+        padding: 1rem; 
     }
 
     .contact .row form .btn {
-        width: 100%; /* Full width for button */
-        padding: 1rem; /* Adjust padding */
+        width: 100%;
+        padding: 1rem; 
     }
 
     footer {
-        padding: 1rem; /* Adjust footer padding */
+        padding: 1rem;
+        background-color: #007BFF; 
     }
 
     footer p {
-        font-size: 1rem; /* Adjust footer font size */
+        font-size: 1rem; 
     }
 }
 

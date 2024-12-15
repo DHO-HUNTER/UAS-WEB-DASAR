@@ -7,7 +7,7 @@ let context;
 
 //snake
 let snakeX = block_size * 5;
-let snakeY = block_size * 5;
+let snakeY = block_size * 2;
 let velocityX = 0;
 let velocityY = 0;
 let snake_body = [];
@@ -28,7 +28,7 @@ window.onload = function () {
   place_food();
   document.addEventListener("keyup", change_direction);
   //update();
-  setInterval(update, 1000 / 10); //milisecond
+  setInterval(update, 1500 / 10); //milisecond
 };
 
 //membuat board, snake, dan food saat dipanggil
