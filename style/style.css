@@ -751,7 +751,7 @@ footer p {
 
 /* media kueris */
 /* laptop */
-@media (min-width:992px) and (max-width:1199px) {
+@media screen and (min-width:992px) and (max-width:1199px) {
     html {
         font-size: 100%;
     }
@@ -875,7 +875,7 @@ footer p {
 } */
 
 /* mobile phone */
-@media (max-width:767px) {
+@media screen and (max-width:767px) {
     html {
         font-size: 65%;
     }
