@@ -807,6 +807,9 @@ footer p {
     #hamburger-menu {
         display: inline-block;
     }
+    header{
+        width: 10vh;
+    }
 
     .navbar .navbar-nav {
         position: absolute;
@@ -814,7 +817,7 @@ footer p {
         right: -100%;
         bottom: 40%;
         background-color: rgba(0, 0, 52, 0.9);
-        width: 30rem;
+        width: 20vh;
         height: 100vh;
         transition: 0.3s;
     }
