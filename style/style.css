@@ -871,7 +871,7 @@ footer p {
 } */
 
 /* mobile phone */
-@media screen and (max-width:767px) {
+@media screen and (max-width:758px) {
     html {
         font-size: 65%;
     }
@@ -885,7 +885,6 @@ footer p {
         position: absolute;
         top: 100%;
         right: -100%;
-        bottom: 40%;
         background-color: rgba(0, 0, 52, 0.9);
         width: 30rem;
         height: 100vh;
