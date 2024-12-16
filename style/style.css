@@ -767,13 +767,6 @@ footer p {
         display: inline-block;
     }
 
-    .navbar{
-        padding: 1em 5%;
-    }
-
-    .navbar .navbar-judul {
-        font-size: 1.2rem;
-    }
     .navbar .navbar-nav {
         position: absolute;
         top: 100%;
@@ -795,7 +788,6 @@ footer p {
         margin: 1.5rem;
         padding: 0.2rem;
         font-size: 2rem;
-        font-size: 1.6rem;
     }
 
     .navbar .navbar-nav a:hover::after {
@@ -804,10 +796,6 @@ footer p {
 
     .navbar .navbar-nav a::after {
         transform-origin: 0 0;
-    }
-
-    .navbar .navbar-extra a {
-        font-size: 1.2rem;
     }
 
     .hero {
