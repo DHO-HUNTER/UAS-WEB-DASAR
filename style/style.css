@@ -26,13 +26,28 @@ body {
     background-color: var(--bg);
     font-family: sans-serif;
     color: #fff;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    max-width: 100vw; /* Ensure the body does not exceed the viewport width */
-    width: 100%; /* Make the body take the full width */
-    box-sizing: border-box; /* Include padding and border in width calculations */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    max-width: 100vw;
+    /* Ensure the body does not exceed the viewport width */
+    width: 100%;
+    /* Make the body take the full width */
+    box-sizing: border-box;
+    /* Include padding and border in width calculations */
 }
 
 /* navbar */
+
+header {
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: pageIn 4.5s forwards;
+    animation-delay: 4.5s;
+}
 
 .navbar {
     display: flex;
@@ -47,11 +62,6 @@ body {
     right: 0;
     width: 100%;
     z-index: 9999;
-    animation-delay: 4.5s;
-    animation: pageIn 4.5s forwards;
-    height: 10vh;
-    overflow: hidden;
-    opacity: 0;
 }
 
 .navbar .navbar-judul {
@@ -795,70 +805,89 @@ footer p {
     }
 
     .hero {
-        min-height: 70vh; /* Adjust minimum height */
-        padding: 2em; /* Add padding */
+        min-height: 70vh;
+        /* Adjust minimum height */
+        padding: 2em;
+        /* Add padding */
     }
 
     .hero .container .content p {
-        font-size: 1.5rem; /* Adjust font size */
-        width: 80%; /* Make it wider */
+        font-size: 1.5rem;
+        /* Adjust font size */
+        width: 80%;
+        /* Make it wider */
     }
 
     /* About section adjustments */
     .about .row {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
     }
 
     .about .row .content p {
-        width: 90%; /* Adjust width */
+        width: 90%;
+        /* Adjust width */
     }
 
     /* List section adjustments */
     .list .row .bb-row,
     .list .row .snake-row,
     .list .row .invader-row {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
     }
 
     .list .row .bb-row .bb-content p,
     .list .row .snake-row .snake-content p,
     .list .row .invader-row .invader-content p {
-        width: 90%; /* Adjust width */
+        width: 90%;
+        /* Adjust width */
     }
 
     .list .row .bb-image img,
     .list .row .snake-image img,
     .list .row .invader-image img {
-        width: 80%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 80%;
+        /* Make images responsive */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 
     /* Contact section adjustments */
     .contact .row form {
-        width: 90%; /* Adjust form width */
-        padding: 2rem; /* Add padding */
+        width: 90%;
+        /* Adjust form width */
+        padding: 2rem;
+        /* Add padding */
     }
 
     .contact .row form .input-grup {
-        width: 100%; /* Full width for input group */
+        width: 100%;
+        /* Full width for input group */
     }
 
     .contact .row form .input-grup input {
-        width: 100%; /* Full width for input */
-        padding: 1rem; /* Adjust padding */
+        width: 100%;
+        /* Full width for input */
+        padding: 1rem;
+        /* Adjust padding */
     }
 
     .contact .row form .btn {
-        width: 100%; /* Full width for button */
-        padding: 1rem; /* Adjust padding */
+        width: 100%;
+        /* Full width for button */
+        padding: 1rem;
+        /* Adjust padding */
     }
 
     footer {
-        padding: 1rem; /* Adjust footer padding */
+        padding: 1rem;
+        /* Adjust footer padding */
     }
 
     footer p {
-        font-size: 1rem; /* Adjust footer font size */
+        font-size: 1rem;
+        /* Adjust footer font size */
     }
 }
 
@@ -871,8 +900,8 @@ footer p {
 } */
 
 /* mobile phone */
-@media screen and (max-width:767px){
-html {
+@media screen and (max-width:767px) {
+    html {
         font-size: 65%;
     }
 
@@ -885,7 +914,7 @@ html {
         position: absolute;
         top: 100%;
         right: -100%;
-        bottom:40%;
+        bottom: 40%;
         background-color: rgba(0, 0, 52, 0.9);
         width: 30rem;
         height: 100vh;
@@ -956,7 +985,7 @@ html {
     .list .row .bb-row .bb-content p,
     .list .row .snake-row .snake-content p,
     .list .row .invader-row .invader-content p {
-       width: 85vw;
+        width: 85vw;
     }
 
     .list .row .bb-row .bb-content h3,
