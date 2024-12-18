@@ -1039,3 +1039,78 @@ footer p {
         font-size: 1rem;
     }
 }
+
+/* Products Section */
+.list .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.list .list-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.products .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.products .product-icons a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.list .game-image {
+    padding: 1rem 0;
+}
+
+.list .game-image img {
+    height: 25rem;
+}
+
+.list .game-content h3 {
+    font-size: 2rem;
+}
+
+.list .game-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+}
+
+.list .game-stars .star-full {
+    fill: var(--primary);
+}
+
+.list .cta-game {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.list .cta-game a {
+    text-decoration: none;
+    color: white;
+}
+
+.products .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+}
