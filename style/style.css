@@ -59,7 +59,7 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
-    animation: pageIn 4.5s forwards;
+    animation: 4.5s forwards;
     animation-delay: 4.5s;
     opacity: 0;
 }
