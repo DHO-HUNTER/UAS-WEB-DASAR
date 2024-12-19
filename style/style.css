@@ -70,6 +70,7 @@ body {
     margin: 0 1rem;
     display: inline-block;
     font-size: 1.3rem;
+    margin: 0 1rem;
 }
 
 .navbar .navbar-nav a:hover {
@@ -102,6 +103,7 @@ body {
 
 #hamburger-menu {
     display: none;
+    cursor: pointer;
 }
 
 /* hero */
