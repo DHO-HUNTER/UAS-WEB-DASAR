@@ -6,9 +6,7 @@
 }
 
 
-*,
-*::before,
-*::after {
+*{
     padding: 0;
     margin: 0;
     outline: none;
@@ -26,8 +24,6 @@ body {
     background-color: var(--bg);
     font-family: sans-serif;
     color: #fff;
-    overflow-x: hidden;
-    max-width: 100vw;
 }
 
 /* navbar */
@@ -65,8 +61,6 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
     background-clip: text;
     color: transparent;
-    margin: 0 1rem;
-    display: inline-block;
     font-size: 1.6rem;
 
 }
@@ -76,9 +70,6 @@ body {
     margin: 0 1rem;
     display: inline-block;
     font-size: 1.3rem;
-    will-change: transform;
-    display: inline-block;
-
 }
 
 .navbar .navbar-nav a:hover {
@@ -101,7 +92,6 @@ body {
 .navbar .navbar-extra a {
     color: white;
     margin: 0 1rem;
-    display: inline-block;
 }
 
 .navbar .navbar-extra a:hover {
@@ -111,7 +101,6 @@ body {
 
 #hamburger-menu {
     display: none;
-    cursor: pointer;
 }
 
 /* hero */
