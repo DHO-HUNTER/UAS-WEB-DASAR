@@ -62,7 +62,7 @@ body {
     background-clip: text;
     color: transparent;
     font-size: 1.6rem;
-
+    display: inline-block;
 }
 
 .navbar .navbar-nav a {
@@ -92,6 +92,7 @@ body {
 .navbar .navbar-extra a {
     color: white;
     margin: 0 1rem;
+    display: inline-block;
 }
 
 .navbar .navbar-extra a:hover {
