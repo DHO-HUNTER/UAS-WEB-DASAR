@@ -771,6 +771,11 @@ footer p {
 @media screen and (max-width:767px) {
     html {
         font-size: 65%;
+        box-sizing: border-box;
+    }
+
+    *{
+        box-sizing: border-box;
     }
 
     /* Responsive styles for max-width: 767px */
@@ -784,7 +789,7 @@ footer p {
         right: -100%;
         bottom: 40%;
         background-color: rgba(0, 0, 52, 0.9);
-        width: 30rem;
+        width: 60vw;
         height: 100vh;
         transition: 0.3s;
     }
