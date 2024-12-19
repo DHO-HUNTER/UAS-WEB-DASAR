@@ -272,7 +272,6 @@ li {
 }
 
 /* list section */
-/* bb game */
 .list {
     padding: 8rem 7% 1.4rem;
     background-color: rgb(1, 1, 37);
@@ -302,206 +301,81 @@ li {
     mix-blend-mode: difference;
 }
 
-.list .row .bb-row {
-    display: flex;
-    margin-bottom: 4rem;
+.list .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
 }
 
-.list .row .bb-row .bb-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 60%;
+.list .list-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
 }
 
-.list .row .bb-row .bb-content h3 {
-    margin-bottom: 2rem;
+.products .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.products .product-icons a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.list .game-image {
+    padding: 1rem 0;
+}
+
+.list .game-image img {
+    height: 25rem;
+}
+
+.list .game-content h3 {
     font-size: 2rem;
 }
 
-.list .row .bb-row .bb-content h3 span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    font-family: 'Tiny5';
-    font-style: italic;
-    font-size: 2.5rem;
+.list .game-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
 }
 
-.list .row .bb-row .bb-content p {
-    margin-bottom: 2.5rem;
-    width: 25em;
-    font-size: 1.6rem;
+.list .game-stars .star-full {
+    fill: var(--primary);
 }
 
-.list .row .bb-row .bb-content p span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    font-family: 'Tiny5';
-    font-style: italic;
-    font-size: 2.5rem;
+.list .cta-game {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-.list .row .bb-row .bb-content .cta-bb {
-    display: flex;
-    justify-content: space-between;
-    border: 2rem rgba(0, 0, 52) solid;
-    border-radius: 1.5rem;
-    background: rgba(0, 0, 52);
+.list .cta-game a {
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
-    animation: glow 2s infinite ease-in-out;
 }
 
-.list .row .bb-row .bb-image {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-items: flex-end;
-
+.products .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
-.list .row .bb-row .bb-image img {
-    width: 90%;
-}
-
-/* bb-game end */
-
-/* snake game */
-.list .row .snake-row {
-    display: flex;
-    margin-bottom: 4rem;
-}
-
-.list .row .snake-row .snake-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 60%;
-}
-
-.list .row .snake-row .snake-content h3 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.list .row .snake-row .snake-content h3 span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    font-family: 'Tiny5';
-    font-style: italic;
-    font-size: 2.5rem;
-}
-
-.list .row .snake-row .snake-content p {
-    margin-bottom: 2.5rem;
-    width: 30em;
-    font-size: 1.6rem;
-}
-
-.list .row .snake-row .snake-content p span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    font-family: 'Tiny5';
-    font-style: italic;
-    font-size: 2.5rem;
-}
-
-.list .row .snake-row .snake-content .cta-snake {
-    display: flex;
-    justify-content: right;
-    border: 2rem rgba(0, 0, 52) solid;
-    border-radius: 1.5rem;
-    background: rgba(0, 0, 52);
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-    animation: glow 2s infinite ease-in-out;
-    justify-items: center;
-}
-
-.list .row .snake-row .snake-image {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-items: flex-end;
-}
-
-.list .row .snake-row .snake-image img {
-    width: 100%;
-}
-
-/* snake game end */
-
-/* invader game */
-.list .row .invader-row {
-    display: flex;
-}
-
-.list .row .invader-row .invader-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 60%;
-}
-
-.list .row .invader-row .invader-content h3 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.list .row .invader-row .invader-content h3 span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    font-family: 'Tiny5';
-    font-style: italic;
-    font-size: 2.5rem;
-}
-
-.list .row .invader-row .invader-content p {
-    margin-bottom: 2.5rem;
-    width: 28em;
-    font-size: 1.6rem;
-}
-
-.list .row .invader-row .invader-content p span {
-    color: transparent;
-    background: linear-gradient(to right, rgba(0, 0, 135, 1), rgba(92, 0, 207, 1));
-    background-clip: text;
-    font-family: 'Tiny5';
-    font-style: italic;
-    font-size: 2.5rem;
-}
-
-.list .row .invader-row .invader-content .cta-invader {
-    display: flex;
-    justify-content: space-between;
-    border: 2rem rgba(0, 0, 52) solid;
-    border-radius: 1.5rem;
-    background: rgba(0, 0, 52);
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-    animation: glow 2s infinite ease-in-out;
-}
-
-.list .row .invader-row .invader-image {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-items: flex-end;
-}
-
-.list .row .invader-row .invader-image img {
-    width: 85%;
-}
-
-/* invader game end*/
+/* list section end */
 
 /* section FAQ start*/
 
@@ -1041,76 +915,3 @@ footer p {
 }
 
 /* Products Section */
-.list .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-    margin-top: 4rem;
-}
-
-.list .list-card {
-    text-align: center;
-    border: 1px solid #666;
-    padding: 2rem;
-}
-
-.products .product-icons {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.products .product-icons a {
-    width: 4rem;
-    height: 4rem;
-    color: #fff;
-    margin: 0.3rem;
-    border: 1px solid #666;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.products .product-icons a:hover {
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
-}
-
-.list .game-image {
-    padding: 1rem 0;
-}
-
-.list .game-image img {
-    height: 25rem;
-}
-
-.list .game-content h3 {
-    font-size: 2rem;
-}
-
-.list .game-stars {
-    font-size: 1.7rem;
-    padding: 0.8rem;
-    color: var(--primary);
-}
-
-.list .game-stars .star-full {
-    fill: var(--primary);
-}
-
-.list .cta-game {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.list .cta-game a {
-    text-decoration: none;
-    color: white;
-}
-
-.products .product-price span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1rem;
-}
