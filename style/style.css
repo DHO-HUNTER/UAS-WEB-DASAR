@@ -37,8 +37,7 @@ body {
 }
 
 /* navbar */
-
-header {
+/*header {
     height: 10vh;
     position: fixed;
     top: 0;
@@ -46,8 +45,7 @@ header {
     width: 100%;
     z-index: 9999;
     animation: pageIn 4.5s forwards;
-    animation-delay: 4.5s;
-}
+    animation-delay: 4.5s}*/
 
 .navbar {
     display: flex;
@@ -62,6 +60,8 @@ header {
     right: 0;
     width: 100%;
     z-index: 9999;
+    animation: pageIn 4.5s forwards;
+    animation-delay: 4.5s;
 }
 
 .navbar .navbar-judul {
