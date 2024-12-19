@@ -62,6 +62,7 @@ body {
     z-index: 9999;
     animation: pageIn 4.5s forwards;
     animation-delay: 4.5s;
+    opacity: 0;
 }
 
 .navbar .navbar-judul {
