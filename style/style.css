@@ -27,13 +27,7 @@ body {
     font-family: sans-serif;
     color: #fff;
     overflow-x: hidden;
-    /* Prevent horizontal scrolling */
     max-width: 100vw;
-    /* Ensure the body does not exceed the viewport width */
-    width: 100%;
-    /* Make the body take the full width */
-    box-sizing: border-box;
-    /* Include padding and border in width calculations */
 }
 
 /* navbar */
