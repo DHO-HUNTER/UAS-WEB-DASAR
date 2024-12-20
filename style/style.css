@@ -6,7 +6,7 @@
 }
 
 
-*,*::before,*::after{
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     outline: none;
@@ -65,7 +65,7 @@ body {
     color: transparent;
     font-size: 1.6rem;
     display: inline-block;
-    margin:0 1rem;
+    margin: 0 1rem;
 }
 
 .navbar .navbar-nav a {
@@ -763,11 +763,10 @@ footer p {
         box-sizing: border-box;
     }
 
-    *{
+    * {
         box-sizing: border-box;
     }
 
-    /* Responsive styles for max-width: 767px */
     #hamburger-menu {
         display: inline-block;
     }
@@ -778,7 +777,7 @@ footer p {
         right: -100%;
         bottom: 40%;
         background-color: rgba(0, 0, 52, 0.9);
-        width: 10vw;
+        width: 30rem;
         height: 100vh;
         transition: 0.3s;
     }
@@ -822,7 +821,7 @@ footer p {
         flex-wrap: wrap;
     }
 
-    .about .row h3{
+    .about .row h3 {
         margin-top: 1rem;
         font-size: 2rem;
     }
@@ -836,11 +835,11 @@ footer p {
         font-size: 1.6rem;
     }
 
-    .about .row .content{
-        padding: 0 ;
+    .about .row .content {
+        padding: 0;
     }
 
-   .about .row .about-img img{
+    .about .row .about-img img {
         height: 24rem;
         object-fit: cover;
         object-position: center;
@@ -878,5 +877,3 @@ footer p {
         font-size: 1rem;
     }
 }
-
-/* Products Section */
