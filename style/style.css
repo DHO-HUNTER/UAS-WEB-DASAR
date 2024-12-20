@@ -804,7 +804,7 @@ footer p {
     }
 
     .hero {
-        min-height: 60vh;
+        min-height: 100vh;
         padding: 1em;
         background-size: cover;
     }
@@ -819,8 +819,12 @@ footer p {
     }
 
     .about .row {
-        display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about .row h3{
+        margin-top: 1rem;
+        font-size: 2rem;
     }
 
     .about .row h3 span {
@@ -829,44 +833,17 @@ footer p {
     }
 
     .about .row .content p {
-        width: 90%;
+        font-size: 1.6rem;
     }
 
-    .about .row .about-img img {
-        width: 100%;
-        height: auto;
+    .about .row .content{
+        padding: 0 ;
     }
 
-    .list .row .bb-row,
-    .list .row .snake-row,
-    .list .row .invader-row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .list .row .bb-row .bb-content p,
-    .list .row .snake-row .snake-content p,
-    .list .row .invader-row .invader-content p {
-        width: 85vw;
-    }
-
-    .list .row .bb-row .bb-content h3,
-    .list .row .snake-row .snake-content h3,
-    .list .row .invader-row .invader-content h3 {
-        width: 100%;
-    }
-
-    .list .row .bb-row .bb-content h3 span,
-    .list .row .snake-row .snake-content h3 span,
-    .list .row .invader-row .invader-content h3 span {
-        display: active;
-    }
-
-    .list .row .bb-image img,
-    .list .row .snake-image img,
-    .list .row .invader-image img {
-        width: 10%;
-        height: 10%;
+   .about .row .about-img img{
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
     }
 
     .contact .row {
