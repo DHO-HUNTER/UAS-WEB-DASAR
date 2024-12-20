@@ -5,7 +5,6 @@
     --hover: rgba(50, 16, 143);
 }
 
-
 *,
 *::before,
 *::after {
@@ -15,6 +14,62 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+
+.intro {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    animation: bg-animation 10s alternate forwards;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.intro .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro .content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.intro .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+}
+
+.intro .content h1 span {
+    color: #00d4ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+.intro .content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards 0.5s;
 }
 
 html {
@@ -41,8 +96,8 @@ header {
     opacity: 0;
     width: 100%;
     z-index: 9999;
-    animation: pageIn 4.5s forwards;
-    animation-delay: 4.5s;
+    animation: pageIn 11s forwards;
+    animation-delay: 11s;
 }
 
 .navbar {
@@ -78,8 +133,6 @@ header {
     margin: 0 1rem;
     display: inline-block;
     font-size: 1.3rem;
-    display: inline-block;
-
 }
 
 .navbar .navbar-nav a:hover {
@@ -120,7 +173,6 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -146,8 +198,8 @@ header {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    animation: pageIn 4.5s forwards;
-    animation-delay: 4.5s;
+    animation: pageIn 11s forwards;
+    animation-delay: 11s;
 }
 
 .hero .container .content {
@@ -164,7 +216,7 @@ header {
     mix-blend-mode: differenc;
     font-style: italic;
     animation: pageIn 1s forwards;
-    animation-delay: 4.5s;
+    animation-delay: 11s;
     opacity: 0;
     width: 30em;
 }
@@ -185,7 +237,7 @@ header {
     border-radius: 0.5rem;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     animation: fadeIn 1s forwards;
-    animation-delay: 4.5s;
+    animation-delay: 11s;
     opacity: 0;
 }
 
@@ -198,8 +250,8 @@ header {
     z-index: 3;
     margin-bottom: -4rem;
     opacity: 0;
-    animation: pageIn 4.5s forwards;
-    animation-delay: 4.5s;
+    animation: pageIn 11s forwards;
+    animation-delay: 11s;
 }
 
 .hero .container .content svg text {
@@ -215,7 +267,16 @@ header {
 .about {
     padding: 8rem 7% 1.4rem;
 }
-
+.about .row .content{
+    animation: fadeIn 11s forwards;
+    animation-delay: 11s;
+    opacity: 0;
+}
+.about .row .about-img{
+    animation: fadeIn 11s forwards;
+    animation-delay: 11s;
+    opacity: 0;
+}
 
 .about .row {
     display: flex;
@@ -238,6 +299,7 @@ header {
     font-family: 'Tiny5';
     margin-left: 0.5rem;
     flex-wrap: wrap;
+    
 }
 
 .about .row .content p {
@@ -263,7 +325,7 @@ li {
 
 .about .row .about-img img {
     width: 120%;
-    justify-items: flex-end;
+    justify-items: flex-start;
 }
 
 /* list section */
@@ -305,11 +367,11 @@ li {
 
 .list .list-card {
     text-align: center;
-    border: 1px solid #666;
+    border: 1px solid var(--hover);
     padding: 2rem;
 }
 
-.products .product-icons {
+/* .products .product-icons {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
@@ -330,7 +392,7 @@ li {
 .products .product-icons a:hover {
     background-color: var(--primary);
     border: 1px solid var(--primary);
-}
+} */
 
 .list .game-image {
     padding: 1rem 0;
@@ -338,6 +400,7 @@ li {
 
 .list .game-image img {
     height: 25rem;
+    filter: drop-shadow(0 0 8px var(--hover));
 }
 
 .list .game-content h3 {
@@ -347,27 +410,23 @@ li {
 .list .game-stars {
     font-size: 1.7rem;
     padding: 0.8rem;
-    color: var(--primary);
+    color: black;
 }
 
 .list .game-stars .star-full {
-    fill: var(--primary);
+    fill: orange;
 }
 
 .list .cta-game {
     font-size: 1.3rem;
     font-weight: bold;
+    background-color: var(--bg);
 }
 
 .list .cta-game a {
     text-decoration: none;
     color: white;
-}
-
-.products .product-price span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1rem;
+    animation: glow 2s ease-in-out infinite;
 }
 
 /* list section end */
@@ -551,7 +610,37 @@ footer p {
 
 /* keyframe web */
 
+@keyframes scene {
+    from {
+        opacity: 1;
+    }
 
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
 
 @keyframes stroke {
     0% {
@@ -585,6 +674,7 @@ footer p {
 
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -738,11 +828,29 @@ footer p {
 
 /* mobile phone */
 @media screen and (max-width:767px) {
+
     html {
         font-size: 65%;
     }
+    body{
+        overflow-x: hidden;
+    }
 
-    /* Responsive styles for max-width: 767px */
+    .intro .content h1 {
+        font-size: 2rem;
+        /* Ukuran font lebih kecil untuk h1 */
+    }
+
+    .intro .content p {
+        font-size: 1rem;
+        /* Ukuran font lebih kecil untuk paragraf */
+    }
+
+    .intro {
+        padding: 20px;
+        /* Tambahkan padding untuk ruang di sisi */
+    }
+
     #hamburger-menu {
         display: inline-block;
     }

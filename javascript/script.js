@@ -1,12 +1,9 @@
 //Toggle clas active
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const navbarNav = document.querySelector('.navbar-nav');
-
-// Toggle menu on click
-hamburgerMenu.addEventListener('click', () => {
-  hamburgerMenu.classList.toggle('active'); // Toggle animation for hamburger
-  navbarNav.classList.toggle('active'); // Show/hide menu
-});
+const navbarNav = document.querySelector(".navbar-nav");
+//ketika hamburger menu di klik
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
 
 //klik diluar sidebar untuk keluar nav
 const hamburger = document.querySelector("#hamburger-menu");
