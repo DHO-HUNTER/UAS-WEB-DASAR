@@ -89,16 +89,6 @@ body {
 
 /* navbar */
 
-header {
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    z-index: 9999;
-    animation: pageIn 11s forwards;
-    animation-delay: 11s;
-}
-
 .navbar {
     display: flex;
     position: fixed;
@@ -110,8 +100,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     z-index: 9999;
+    opacity: 0;
+    animation: pageIn 11s forwards;
+    animation-delay: 11s;
 }
 
 .navbar .navbar-judul {
