@@ -870,7 +870,7 @@ footer p {
         transform-origin: 0 0;
     }
 
-   /*.hero {
+   .hero {
         min-height: 100vh;
         padding: 1em;
         background-size: cover;
@@ -936,4 +936,3 @@ footer p {
         font-size: 1rem;
     }
 }
-/*
