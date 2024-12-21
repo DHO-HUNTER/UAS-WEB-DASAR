@@ -19,7 +19,7 @@
 
 .intro {
     position: fixed;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,8 +185,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    min-width: 100vw;
     object-fit: cover;
     min-height: 100vh ;
     opacity: 0;
@@ -196,7 +195,7 @@ body {
 
 .hero .container .content {
     padding: 1.4rem 7%;
-    max-width: 60rem;
+    max-width: 100vw;
 }
 
 .hero .container .content p {
@@ -824,23 +823,17 @@ footer p {
     html {
         font-size: 65%;
     }
-    body{
-        overflow-x: hidden;
-    }
 
     .intro .content h1 {
         font-size: 2rem;
-        /* Ukuran font lebih kecil untuk h1 */
     }
 
     .intro .content p {
         font-size: 1rem;
-        /* Ukuran font lebih kecil untuk paragraf */
     }
 
     .intro {
         padding: 20px;
-        /* Tambahkan padding untuk ruang di sisi */
     }
 
     #hamburger-menu {
@@ -851,7 +844,6 @@ footer p {
         position: absolute;
         top: 100%;
         right: -100%;
-        bottom: 40%;
         background-color: rgba(0, 0, 52, 0.9);
         width: 30rem;
         height: 100vh;
