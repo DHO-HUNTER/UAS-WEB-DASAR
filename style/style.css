@@ -855,11 +855,6 @@ footer p {
         overflow-x: hidden;
     }
 
-    .intro{
-        height: 60vh;
-    }
-
-
     .intro .content h1 {
         font-size: 2rem;
         /* Ukuran font lebih kecil untuk h1 */
@@ -877,10 +872,6 @@ footer p {
 
     #hamburger-menu {
         display: inline-block;
-    }
-
-    header{
-        height: 60vh;
     }
 
     .navbar .navbar-nav {
