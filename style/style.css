@@ -874,6 +874,10 @@ footer p {
         display: inline-block;
     }
 
+    .navbar{
+        min-height: 60vh;
+    }
+
     .navbar .navbar-nav {
         position: absolute;
         top: 100%;
