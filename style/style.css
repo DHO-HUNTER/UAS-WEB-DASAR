@@ -855,6 +855,11 @@ footer p {
         overflow-x: hidden;
     }
 
+    .intro{
+        height: 60vh;
+    }
+
+
     .intro .content h1 {
         font-size: 2rem;
         /* Ukuran font lebih kecil untuk h1 */
@@ -874,8 +879,8 @@ footer p {
         display: inline-block;
     }
 
-    .navbar{
-        min-height: 60vh;
+    header{
+        height: 60vh;
     }
 
     .navbar .navbar-nav {
